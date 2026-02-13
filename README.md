@@ -1,6 +1,6 @@
 # Station-Level Charging Demand Profiles for Heavy-Duty Electric Trucks
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.XXXXXXX-blue)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/1157072742.svg)](https://doi.org/10.5281/zenodo.18631296)
 [![License: MIT](https://img.shields.io/badge/Code-MIT-green.svg)](LICENSE)
 [![License: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
@@ -237,7 +237,7 @@ If you use this dataset or code, please cite:
 
 Zenodo archive:
 
-> [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+> [![DOI](https://zenodo.org/badge/1157072742.svg)](https://doi.org/10.5281/zenodo.18631296)
 
 ```bibtex
 @article{YourCiteKey2026,
@@ -272,4 +272,4 @@ Zenodo archive:
 
 ## Contact
 
-For questions or collaboration enquiries, please open an issue on this repository or contact the authors at Lund University.
+For questions or collaboration enquiries, please open an issue on this repository or contact the author Mattias Ingelström at Lund University.
