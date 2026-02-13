@@ -124,7 +124,7 @@ Reusable, fleet-size-independent profiles whose 24 hourly values sum to 1.0.
 | Column | Type    | Description |
 |--------|---------|-------------|
 | `hour` | int     | Hour of day (0 = midnight, …, 23 = 11 pm) |
-| `mean` | float   | Mean fraction of daily energy across 78 simulation iterations |
+| `mean` | float   | Mean fraction of daily energy across all simulation iterations |
 | `std`  | float   | Standard deviation across iterations |
 | `p5`   | float   | 5th percentile |
 | `p25`  | float   | 25th percentile |
@@ -153,7 +153,7 @@ Direct simulation output with full distributional statistics in kW.
 | Column    | Type  | Description |
 |-----------|-------|-------------|
 | `hour`    | int   | Hour of day (0–23) |
-| `mean_kW` | float | Mean power demand (kW) across 78 iterations |
+| `mean_kW` | float | Mean power demand (kW) across all iterations |
 | `std_kW`  | float | Standard deviation (kW) |
 | `p5_kW` … `p95_kW` | float | Percentile bands (kW) |
 | `min_kW`  | float | Minimum across all iterations (kW) |
@@ -201,7 +201,6 @@ The underlying model simulates freight truck operations across Sweden using
 [MATSim](https://www.matsim.org/) with electric vehicle charging extensions.
 Each iteration represents a complete day of operations with stochastic route and schedule variation.
 
-- **83 total iterations** simulated; **iterations 5–9 excluded** (known errors) → **78 usable**.
 - **≈ 6,200 electric trucks** modelled nationally.
 - Coordinate reference system: SWEREF 99 TM (EPSG:3006).
 - Geographic scope of these profiles: **Skåne** (Scania), southern Sweden.
@@ -222,7 +221,7 @@ The resulting very flat depot profile (peak-to-valley ratio ≈ 1.04) demonstrat
 For each iteration and battery-size category:
 1. Build a 24-hour energy profile (kWh per hour).
 2. Divide by the iteration's daily total → fraction profile summing to 1.0.
-3. Compute percentile statistics (mean, P5–P95) across all 78 iterations.
+3. Compute percentile statistics (mean, P5–P95) across all iterations.
 
 This separates the *temporal shape* of charging demand from the *magnitude*, allowing the profiles to be scaled to any fleet scenario.
 
