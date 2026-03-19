@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+authors:
+  - family-names: "Ingelström"
+    given-names: "Mattias"
+    affiliation: "Lund University"
+    orcid: "https://orcid.org/0009-0003-0011-2926" # Replace with yours
+title: "Charging Demand Profiles for Heavy-Duty Electric Trucks — Skåne, Sweden"
+version: 1.0.1
+doi: 10.5281/zenodo.18631297
+date-released: 2026-02-13
+url: "https://github.com/mattiasingelstrom/hd-ev-charging-profiles"
+repository-code: "https://github.com/mattiasingelstrom/hd-ev-charging-profiles"
+keywords:
+  - heavy-duty trucks
+  - electric vehicles
+  - charging demand
+  - power grid impact
