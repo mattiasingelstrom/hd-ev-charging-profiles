@@ -25,7 +25,6 @@ open_access_package/
 │
 │   ── Scripts ──
 ├── plot_normalized_profiles.py            ← Main plotting script (user-configurable scaling)
-├── plot_demand_curves.py                  ← Legacy absolute-demand-curve plotting script
 │
 │   ── Normalised profiles (fraction of daily energy; sum = 1.0) ──
 ├── public_normalized_overall.csv
@@ -88,9 +87,6 @@ pip install pandas numpy matplotlib
 
 # 3. Generate all figures from the bundled CSV data
 python plot_normalized_profiles.py
-
-# 4. (Optional) Generate only the absolute demand-curve figure
-python plot_demand_curves.py
 ```
 
 ### Custom scaling
@@ -124,7 +120,7 @@ Reusable, fleet-size-independent profiles whose 24 hourly values sum to 1.0.
 | Column | Type    | Description |
 |--------|---------|-------------|
 | `hour` | int     | Hour of day (0 = midnight, …, 23 = 11 pm) |
-| `mean` | float   | Mean fraction of daily energy across 78 simulation iterations |
+| `mean` | float   | Mean fraction of daily energy across 79 simulation iterations |
 | `std`  | float   | Standard deviation across iterations |
 | `p5`   | float   | 5th percentile |
 | `p25`  | float   | 25th percentile |
@@ -153,7 +149,7 @@ Direct simulation output with full distributional statistics in kW.
 | Column    | Type  | Description |
 |-----------|-------|-------------|
 | `hour`    | int   | Hour of day (0–23) |
-| `mean_kW` | float | Mean power demand (kW) across 78 iterations |
+| `mean_kW` | float | Mean power demand (kW) across 79 iterations |
 | `std_kW`  | float | Standard deviation (kW) |
 | `p5_kW` … `p95_kW` | float | Percentile bands (kW) |
 | `min_kW`  | float | Minimum across all iterations (kW) |
@@ -176,20 +172,20 @@ Direct simulation output with full distributional statistics in kW.
 
 |  | Public (Fast) | Depot (Optimised) |
 |--|---------------|-------------------|
-| Usable iterations | 78 | 78 |
-| Mean trucks per day | 1,894 | 756 |
-| Mean energy per truck | 664.6 kWh | 187.2 kWh |
-| **Mean daily energy** | **1,269.0 MWh** | **141.6 MWh** |
+| Usable iterations | 79 | 79 |
+| Mean trucks per day | 1,916 | 756 |
+| Mean energy per truck | 665.7 kWh | 187.1 kWh |
+| **Mean daily energy** | **1,283.8 MWh** | **141.5 MWh** |
 
 ### Energy share by battery capacity
 
 | Battery size (kWh) | Public charging | Depot charging |
 |---------------------|-----------------|----------------|
 | 0–200   | 0.1 % | 0.2 % |
-| 200–300 | 1.9 % | 7.2 % |
-| 300–400 | 20.6 % | 14.4 % |
-| **400–500** | **48.7 %** | **39.2 %** |
-| 500–600 | 28.8 % | 39.1 % |
+| 200–300 | 1.9 % | 7.3 % |
+| 300–400 | 20.6 % | 14.3 % |
+| **400–500** | **48.8 %** | **39.6 %** |
+| 500–600 | 28.7 % | 38.6 % |
 
 ---
 
@@ -228,7 +224,7 @@ This separates the *temporal shape* of charging demand from the *magnitude*, all
 
 ---
 
-## Citation
+## Citation Update when published!!
 
 If you use this dataset or code, please cite:
 

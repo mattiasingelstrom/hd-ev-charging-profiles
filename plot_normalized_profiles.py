@@ -53,13 +53,13 @@ DAILY_ENERGY_DEPOT_MWh  = None    # e.g. 140.0
 N_TRUCKS_PUBLIC = None    # e.g. 2000
 N_TRUCKS_DEPOT  = None    # e.g. 1500
 
-# Simulation reference values (from 78 MATSim iterations):
-SIM_MEAN_ENERGY_PUBLIC_MWh = 1269.0     # mean daily fast-charging energy
-SIM_MEAN_ENERGY_DEPOT_MWh  =  141.6     # mean daily depot-charging energy
-SIM_MEAN_TRUCKS_PUBLIC     = 1894       # mean unique trucks / day (public)
+# Simulation reference values (from 79 MATSim iterations):
+SIM_MEAN_ENERGY_PUBLIC_MWh = 1283.8     # mean daily fast-charging energy
+SIM_MEAN_ENERGY_DEPOT_MWh  =  141.5     # mean daily depot-charging energy
+SIM_MEAN_TRUCKS_PUBLIC     = 1916       # mean unique trucks / day (public)
 SIM_MEAN_TRUCKS_DEPOT      =  756       # mean unique trucks / day (depot)
-SIM_ENERGY_PER_TRUCK_PUBLIC_kWh = 664.6  # mean kWh / truck / day (public)
-SIM_ENERGY_PER_TRUCK_DEPOT_kWh  = 187.2  # mean kWh / truck / day (depot)
+SIM_ENERGY_PER_TRUCK_PUBLIC_kWh = 665.7  # mean kWh / truck / day (public)
+SIM_ENERGY_PER_TRUCK_DEPOT_kWh  = 187.1  # mean kWh / truck / day (depot)
 
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -73,16 +73,16 @@ BIN_ENERGY_SHARE_PUBLIC = {
     "0-200":    0.001,
     "200-300":  0.019,
     "300-400":  0.206,
-    "400-500":  0.487,
-    "500-600":  0.288,
+    "400-500":  0.488,
+    "500-600":  0.287,
     "600-1200": 0.000,
 }
 BIN_ENERGY_SHARE_DEPOT = {
     "0-200":    0.002,
-    "200-300":  0.072,
-    "300-400":  0.144,
-    "400-500":  0.392,
-    "500-600":  0.391,
+    "200-300":  0.073,
+    "300-400":  0.143,
+    "400-500":  0.396,
+    "500-600":  0.386,
     "600-1200": 0.000,
 }
 
